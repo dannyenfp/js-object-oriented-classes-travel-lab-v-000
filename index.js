@@ -9,7 +9,6 @@ class Driver {
     debugger;
     
     return (begYear - this.startDate);
-    
   }
 }
 
