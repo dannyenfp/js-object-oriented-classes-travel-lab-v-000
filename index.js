@@ -25,7 +25,7 @@ class Route {
 
     // let hBlocks = Math.abs(hStartIndex - hEndIndex);
     
-    return vBlocks + hBlocks;
+    return vBlocks;
   } 
 }
 
