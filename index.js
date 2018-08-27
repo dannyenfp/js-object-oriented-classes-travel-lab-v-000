@@ -17,6 +17,10 @@ class Route {
   }
   
   blocksTravelled() { 
-  
+    vBlocks = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
+    hBlocks = 0;
+    
+    return vBlocks + hBlocks;
   } 
 }
+
