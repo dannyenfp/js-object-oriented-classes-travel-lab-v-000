@@ -6,6 +6,6 @@ class Driver {
   
   yearsExperienceFromBeginningOf(year) { 
     let endYear = new Date(year, 0, 1);
-    return Math.round((endYear - startYear)/(1000*60*60*24*365.25));
+    return Math.round((endYear - this.startYear)/(1000*60*60*24*365.25));
   }
 }
