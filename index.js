@@ -20,8 +20,8 @@ class Route {
     let vBlocks = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
     
      let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
-    let hStartIndex = eastWest.findIndex(beginningLocation.horizontal);
-    let hEndIndex = eastWest.findIndex(endingLocation.horizontal);
+    let hStartIndex = eastWest.findIndex(this.beginningLocation.horizontal);
+    let hEndIndex = eastWest.findIndex(this.endingLocation.horizontal);
 
     let hBlocks = Math.abs(hStartIndex - hEndIndex);
     
