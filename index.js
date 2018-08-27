@@ -18,9 +18,18 @@ class Route {
   
   blocksTravelled() { 
     let vBlocks = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
+    
+    
     let hBlocks = 0;
     
     return vBlocks + hBlocks;
   } 
 }
+
+describe('blocksTravelled', function() {
+    it('calculates the number of blocksTravelled', function() {
+      let route = new Route({horizontal: 'Park', vertical: '34'}, {horizontal: 'Park', vertical: '45'})
+      expect(route.blocksTravelled()).to.equal(11)
+    })
+
 
