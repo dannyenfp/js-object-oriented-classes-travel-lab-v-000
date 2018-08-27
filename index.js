@@ -8,6 +8,8 @@ class Driver {
     let begYear = new Date(year);
     
     return (begYear - this.startDate);
+    debugger;
+    
   }
 }
 
