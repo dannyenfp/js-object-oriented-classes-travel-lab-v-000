@@ -29,7 +29,8 @@ class Route {
     return vBlocks + hBlocks;
   } 
   
-  estimatedTime() {
+  estimatedTime(peak) {
+    if (peak)
     return Math.round((this.blocksTravelled()/3));
   }
 }
