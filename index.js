@@ -30,7 +30,7 @@ class Route {
   } 
   
   estimatedTime() {
-    
+    return Math.round((this.blocksTravelled()/3));
   }
 }
 
