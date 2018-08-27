@@ -6,7 +6,7 @@ class Driver {
   
   yearsExperienceFromBeginningOf(year) { 
     let endYear = new Date(year, 1, 1);
-    return this.startDate;
+    return (endYear - this.startDate);
   }
 }
 
