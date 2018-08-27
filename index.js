@@ -15,7 +15,9 @@ class Route {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
-  
+ 
+// also can use .indexOf 
+ 
   blocksTravelled() { 
     let vBlocks = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
     
@@ -26,5 +28,9 @@ class Route {
     
     return vBlocks + hBlocks;
   } 
+  
+  estimatedTime() {
+    
+  }
 }
 
